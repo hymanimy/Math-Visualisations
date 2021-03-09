@@ -1,0 +1,34 @@
+canvas {
+    background: White;
+}
+
+* {
+    background: White;
+}
+
+.slider{ /* The slider itself */
+    -webkit-appearance: none;
+    width: 400px;
+    height: 10px;
+    border-radius: 5px;   
+    background: black;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb{ /* The slider handle, we use webkit to override the default look */
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;  /*this makes the border rounded */
+    background: hotpink;
+    cursor: pointer;
+}
+
+#nSliderTitle, #nSliderValue{
+    font-size: 20px;
+}
+
